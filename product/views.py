@@ -22,6 +22,7 @@ class PublicationViewSet(viewsets.ModelViewSet):
     queryset = Publication.objects.all()
     serializer_class = PublicationSerializer
     permission_classes = [permissions.IsAuthenticated]
+#eatch studentdetails according to primary key
 @csrf_exempt
 def student_detail(request, pk):
     try:
