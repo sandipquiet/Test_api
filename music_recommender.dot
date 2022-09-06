@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="age <= 23.5\ngini = 0.791\nsamples = 15\nvalue = [2, 3, 4, 3, 3]\nclass = Pop Music", fillcolor="#effdfa"] ;
+1 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0]\nclass = Pop Music", fillcolor="#39e5c5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 30.5\ngini = 0.744\nsamples = 11\nvalue = [2, 3, 0, 3, 3]\nclass = Classical", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3, 0]\nclass = Rock Music", fillcolor="#3c39e5"] ;
+2 -> 3 ;
+4 [label="age <= 38.5\ngini = 0.656\nsamples = 8\nvalue = [2, 3, 0, 0, 3]\nclass = Classical", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]\nclass = Classical", fillcolor="#7be539"] ;
+4 -> 5 ;
+6 [label="age <= 50.5\ngini = 0.48\nsamples = 5\nvalue = [2, 0, 0, 0, 3]\nclass = Sad", fillcolor="#f6bdea"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 3]\nclass = Sad", fillcolor="#e539c0"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0, 0]\nclass = Bhakti", fillcolor="#e58139"] ;
+6 -> 8 ;
+}
